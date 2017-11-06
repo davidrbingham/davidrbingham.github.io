@@ -27,7 +27,7 @@ build/Release
 node_modules
 
 # Ignore build files
-public
+build
 
 # Intellij folder
 .idea
