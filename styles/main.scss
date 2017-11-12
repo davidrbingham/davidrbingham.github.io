@@ -2,3 +2,30 @@ html {
   height:100%;
   background: linear-gradient(15deg, #2E3192, #29ABE2 100%) no-repeat;
 }
+
+.page-wrapper {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 200px 200px 200px 200px 200px 200px;
+  grid-template-areas:
+          "page-header  page-header  page-header  page-header  page-header  page-header"
+          "page-sidebar page-sidebar page-sidebar page-content page-content page-content"
+          "page-footer  page-footer  page-footer  page-footer  page-footer  page-footer";
+}
+
+.page-header {
+  grid-area: page-header;
+}
+
+.page-sidebar {
+  grid-area: page-sidebar;
+}
+
+.page-content {
+  grid-area: page-content;
+  position: relative;
+}
+
+.page-footer {
+  grid-area: page-footer;
+}
