@@ -1,18 +1,22 @@
 import React from 'react';
-import 'styles/components/content-container.scss';
 import PropTypes from 'prop-types';
 
 export default class Grid extends React.Component {
 
 	render() {
 		return (
-			<div class="content-wrapper">
-				<div class="content-box content-title">{this.props.footer}</div>
-				<div class="content-box content-sidebar"><img src={this.props.sidebarImage}/></div>
-				<div class="content-box content-content">
+			<div className="content-wrapper">
+				<div className="content-box content-title">
+					<b>{this.props.header}</b>
+				</div>
+				<div className="content-box content-sidebar">
+					1992-1993
+					<img src={this.props.sidebarImage}/>
+				</div>
+				<div className="content-box content-content">
 					{this.props.content}
 				</div>
-				<div class="content-box content-footer">{this.props.footer}</div>
+				<div className="content-box content-footer">{this.props.footer}</div>
 			</div>
 		);
 	}
