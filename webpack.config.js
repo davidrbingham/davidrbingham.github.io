@@ -1,4 +1,5 @@
 "use strict";
+
 var webpack = require('webpack');
 var path = require('path');
 var loaders = require('./webpack.loaders');
@@ -18,7 +19,7 @@ loaders.push({
 module.exports = {
   entry: [
     'react-hot-loader/patch',
-    './src/index.jsx', // your app's entry point
+    './src/index.jsx',
   ],
   devtool: process.env.WEBPACK_DEVTOOL || 'eval-source-map',
   output: {
@@ -30,18 +31,14 @@ module.exports = {
     extensions: ['.js', '.jsx']
   },
   module: {
-    loaders
+    loaders: loaders
   },
   devServer: {
-    contentBase: "./public",
-    // do not print bundle build stats
+    contentBase: "./build",
     noInfo: true,
-    // enable HMR
     hot: true,
-    // embed the webpack-dev-server runtime into the bundle
     inline: true,
-    // serve index.html in place of 404 responses to allow HTML5 history
-    historyApiFallback: true,
+    historyApiFallback: false,
     port: PORT,
     host: HOST
   },

@@ -25,7 +25,7 @@ module.exports = {
     extensions: ['.js', '.jsx']
   },
   module: {
-    loaders
+    loaders: loaders
   },
   plugins: [
     new WebpackCleanupPlugin(),
