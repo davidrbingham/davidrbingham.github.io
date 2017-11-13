@@ -13,7 +13,7 @@ loaders.push({
 
 module.exports = {
   entry: [
-    './src/index.jsx',
+    './src/Index.jsx',
     './styles/index.scss'
   ],
   output: {

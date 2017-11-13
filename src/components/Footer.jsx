@@ -7,7 +7,7 @@ export default class Header extends React.Component {
 		return (
 			<div className="page-footer">
 				<span>
-					<img width="75px" height="75px" src={PersonalLogoText}/>
+					<object width="75px" height="75px" type="image/svg+xml" data={PersonalLogoText}/>
 				</span>
 			</div>
 		);

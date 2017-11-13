@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 import GitHubLogo from '../../images/logos/logo-github.svg';
 import LinkedinLogo from '../../images/logos/logo-linkedin.svg';
@@ -11,37 +11,59 @@ export default class Header extends React.Component {
 	render() {
 		return (
 			<div className="page-header">
-				<span className="hor-rhythm-1">
-					<Link to={'/'}><b>HOME</b></Link>
-				</span>
-				<span className="hor-rhythm-1">
-					<b>ABOUT ME</b>
-				</span>
-				<span className="hor-rhythm-1">
-					<Link to={'/portfolio/education'}><b>EDUCATION</b></Link>
-				</span>
-				<span className="hor-rhythm-1">
-					<b>WORK EXPERIENCE</b>
-				</span>
-				<span className="hor-rhythm-1">
-					<b>CERTIFICATIONS</b>
-				</span>
-				<span className="hor-rhythm-1">
-					<b>WORKING ON</b>
-				</span>
+				<div className="header-container">
+					<div className="header-item">
+						<span className="hor-rhythm-1">
+							<Link to={'/'}><b>HOME</b></Link>
+						</span>
+					</div>
+					<div className="header-item">
+						<span className="hor-rhythm-1">
+							<b>ABOUT ME</b>
+						</span>
+					</div>
+					<div className="header-item">
+						<span className="hor-rhythm-1">
+							<Link to={'/portfolio/education'}><b>EDUCATION</b></Link>
+						</span>
+					</div>
+					<div className="header-item">
+						<span className="hor-rhythm-1">
+							<b>WORK EXPERIENCE</b>
+						</span>
+					</div>
+					<div className="header-item">
+						<span className="hor-rhythm-1">
+							<b>CERTIFICATIONS</b>
+						</span>
+					</div>
+					<div className="header-item">
+						<span className="hor-rhythm-1">
+							<b>WORKING ON</b>
+						</span>
+					</div>
 
-				<span className="hor-rhythm-1">
-						<img width="25px" height="25px" src={GitHubLogo}/>
-					</span>
-				<span className="hor-rhythm-1">
-						<img width="25px" height="25px" src={LinkedinLogo}/>
-					</span>
-				<span className="hor-rhythm-1">
-						<img width="25px" height="25px" src={TwitterLogo}/>
-					</span>
-				<span className="hor-rhythm-1">
-						<img width="25px" height="25px" src={EmailIcon}/>
-					</span>
+					<div className="header-item">
+						<span className="hor-rhythm-1">
+							<img width="25px" height="25px" src={GitHubLogo}/>
+						</span>
+					</div>
+					<div className="header-item">
+						<span className="hor-rhythm-1">
+							<img width="25px" height="25px" src={LinkedinLogo}/>
+						</span>
+					</div>
+					<div className="header-item">
+						<span className="hor-rhythm-1">
+							<img width="25px" height="25px" src={TwitterLogo}/>
+						</span>
+					</div>
+					<div className="header-item">
+						<span className="hor-rhythm-1">
+							<img width="25px" height="25px" src={EmailIcon}/>
+						</span>
+					</div>
+				</div>
 			</div>
 		);
 	}
