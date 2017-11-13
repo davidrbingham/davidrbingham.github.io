@@ -10,7 +10,7 @@ export default class Grid extends React.Component {
 					<b>{this.props.header}</b>
 				</div>
 				<div className="content-box content-sidebar">
-					1992-1993
+					{this.props.sidebarText}
 					<img src={this.props.sidebarImage}/>
 				</div>
 				<div className="content-box content-content">
@@ -24,7 +24,8 @@ export default class Grid extends React.Component {
 
 Grid.propTypes = {
 	header: PropTypes.string.isRequired,
-	sidebarImage: PropTypes.object.isRequired,
+	sidebarText: PropTypes.string.isRequired,
+	sidebarImage: PropTypes.object,
 	content: PropTypes.string.isRequired,
 	footer: PropTypes.string.isRequired
 };

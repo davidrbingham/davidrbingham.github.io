@@ -19,27 +19,27 @@ export default class Header extends React.Component {
 					</div>
 					<div className="header-item">
 						<span className="hor-rhythm-1">
-							<b>ABOUT ME</b>
-						</span>
-					</div>
-					<div className="header-item">
-						<span className="hor-rhythm-1">
 							<Link to={'/portfolio/education'}><b>EDUCATION</b></Link>
 						</span>
 					</div>
 					<div className="header-item">
 						<span className="hor-rhythm-1">
-							<b>WORK EXPERIENCE</b>
+							<Link to={'/portfolio/experience'}><b>EXPERIENCE</b></Link>
 						</span>
 					</div>
 					<div className="header-item">
 						<span className="hor-rhythm-1">
-							<b>CERTIFICATIONS</b>
+							<Link to={'/portfolio/certifications'}><b>CERTIFICATIONS</b></Link>
 						</span>
 					</div>
 					<div className="header-item">
 						<span className="hor-rhythm-1">
-							<b>WORKING ON</b>
+							<Link to={'/portfolio/development'}><b>WORKING ON</b></Link>
+						</span>
+					</div>
+					<div className="header-item">
+						<span className="hor-rhythm-1">
+							<b>BLOG</b>
 						</span>
 					</div>
 
