@@ -49,6 +49,8 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/template.html',
+			title: 'Some Title',
+			favicon: './images/favicons/favi-portfolio.ico',
       files: {
         css: ['style.css'],
         js: ['bundle.js'],

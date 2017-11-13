@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
+
 import GitHubLogo from '../../images/logos/logo-github.svg';
 import LinkedinLogo from '../../images/logos/logo-linkedin.svg';
 import TwitterLogo from '../../images/logos/logo-twitter.svg';
@@ -10,13 +12,13 @@ export default class Header extends React.Component {
 		return (
 			<div className="page-header">
 				<span className="hor-rhythm-1">
-					<b>HOME</b>
+					<Link to={'/'}><b>HOME</b></Link>
 				</span>
 				<span className="hor-rhythm-1">
 					<b>ABOUT ME</b>
 				</span>
 				<span className="hor-rhythm-1">
-					<b>EDUCATION</b>
+					<Link to={'/portfolio/education'}><b>EDUCATION</b></Link>
 				</span>
 				<span className="hor-rhythm-1">
 					<b>WORK EXPERIENCE</b>

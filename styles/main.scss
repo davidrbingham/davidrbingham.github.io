@@ -5,14 +5,10 @@ html {
   font-family: Dosis, sans-serif;
 }
 
-.app-wrapper {
-
-}
-
 .page-wrapper {
   display: grid;
   height: 95vh;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 40% 60%;
   grid-template-rows: 10% 80% 10%;
   grid-template-areas:
           "page-header  page-header"
@@ -28,7 +24,7 @@ html {
 .page-sidebar {
   grid-area: page-sidebar;
   align-self: center;
-  justify-self: center;
+  padding-left: 3em;
 }
 
 .page-content {
