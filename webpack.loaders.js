@@ -1,3 +1,4 @@
+var path = require('path');
 module.exports = [
   {
     test: /\.jsx?$/,
@@ -43,5 +44,12 @@ module.exports = [
     test: /\.png/,
     exclude: /(node_modules|bower_components)/,
     loader: "url-loader?limit=10000&mimetype=image/png"
-  }
+  },
+	{
+		test: /\.html$/,
+		loader: "html-loader",
+		include: [
+			path.resolve(__dirname, "resume")
+		]
+	}
 ];

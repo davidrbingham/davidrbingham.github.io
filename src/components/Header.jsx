@@ -1,6 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 
+import Resume from '../../resume/resume.html';
+
 import GitHubLogo from '../../images/logos/logo-github.svg';
 import LinkedinLogo from '../../images/logos/logo-linkedin.svg';
 import TwitterLogo from '../../images/logos/logo-twitter.svg';
@@ -64,6 +66,16 @@ export default class Header extends React.Component {
 						</span>
 					</div>
 				</div>
+
+				<iframe src="about:blank"
+								ref={(frame) => {
+									try {
+										frame.contentWindow.document.write(Resume.toString());
+									} catch (e) {
+										console.log(e);
+									}
+								}}
+				/>
 			</div>
 		);
 	}

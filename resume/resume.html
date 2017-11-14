@@ -1,0 +1,28 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+
+<body>
+<p id="to-pdf">HTML content...</p>
+</body>
+
+<script type="text/javascript">
+
+	html2canvas(document.body, {
+		onrendered: function (canvas) {
+			setPixelated(canvas.getContext('2d'));
+		}
+	});
+
+	function setPixelated(context) {
+		context['imageSmoothingEnabled'] = false; /* standard /
+		context['mozImageSmoothingEnabled'] = false; / Firefox /
+		context['oImageSmoothingEnabled'] = false; / Opera /
+		context['webkitImageSmoothingEnabled'] = false; / Safari /
+		context['msImageSmoothingEnabled'] = false; / IE */
+	}
+
+	var pdf = new jsPDF('p', 'pt', 'a4');
+	pdf.addHTML(document.body, function() {
+		pdf.save('web.pdf');
+	});
+</script>
