@@ -68,6 +68,7 @@ export default class Header extends React.Component {
 				</div>
 
 				<iframe src="about:blank"
+								className="iframe-hidden"
 								ref={(frame) => {
 									try {
 										frame.contentWindow.document.write(Resume.toString());
