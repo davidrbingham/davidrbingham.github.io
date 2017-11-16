@@ -1,0 +1,24 @@
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.footer-item-left {
+  align-self: left;
+}
+
+.footer-item-right {
+  align-self: right;
+}
+
+.iceberg-container {
+  height: 18em;
+  margin-top: -15em;
+}
+
+.personal-logo-container {
+  height: 2em;
+  margin-top: -15em;
+}

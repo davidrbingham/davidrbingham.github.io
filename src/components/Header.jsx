@@ -6,6 +6,7 @@ import Resume from '../../resume/resume.html';
 import GitHubLogo from '../../images/logos/logo-github.svg';
 import LinkedinLogo from '../../images/logos/logo-linkedin.svg';
 import TwitterLogo from '../../images/logos/logo-twitter.svg';
+import ResumeIcon from '../../images/logos/logo-resume.svg';
 import EmailIcon from '../../images/icons/icon-email.svg';
 
 export default class Header extends React.Component {
@@ -63,6 +64,11 @@ export default class Header extends React.Component {
 					<div className="header-item">
 						<span className="hor-rhythm-1">
 							<img width="25px" height="25px" src={EmailIcon}/>
+						</span>
+					</div>
+					<div className="header-item">
+						<span className="hor-rhythm-1">
+							<img width="25px" height="25px" src={ResumeIcon}/>
 						</span>
 					</div>
 				</div>

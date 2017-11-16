@@ -25,6 +25,7 @@ html {
   grid-area: page-sidebar;
   align-self: center;
   padding-left: 3em;
+  padding-bottom: 15em;
 }
 
 .page-content {
@@ -37,6 +38,6 @@ html {
 .page-footer {
   grid-area: page-footer;
   padding: 10px;
-  align-self: right;
-  justify-self: right;
+  align-self: left;
+  justify-self: left;
 }
