@@ -1,0 +1,47 @@
+[
+  {
+    "header": "Allstate",
+    "title": "Software Developer",
+    "description": "Foundational PoC for the development of a modern front-end UX called Relationship Platform, permitting Allstate agents to concurrently write business for multiple insurance products.",
+    "sidebarText": "January 2016 - Present",
+    "sidebarImageURL": "http://www.davidbingham.me/images/logos/logo-allstate.svg",
+    "content": [
+      {
+        "contentTitle": "Roles and Responsibilities",
+        "details": [
+          {"description": "s"}
+        ]
+      }
+    ]
+  },
+  {
+    "header": "Allstate",
+    "title": "Software Developer",
+    "description": "Some Description",
+    "sidebarText": "January 2016 - Present",
+    "sidebarImageURL": "http://www.davidbingham.me/images/logos/logo-allstate.svg",
+    "content": [
+      {
+        "contentTitle": "Roles and Responsibilities",
+        "details": [
+          {"description": "s"}
+        ]
+      }
+    ]
+  },
+  {
+    "header": "CVS",
+    "title": "Software Developer",
+    "description": "Some Description",
+    "sidebarText": "January 2016 - Present",
+    "sidebarImageURL": "http://www.davidbingham.me/images/logos/logo-cvs.svg",
+    "content": [
+      {
+        "contentTitle": "Roles and Responsibilities",
+        "details": [
+          {"description": "s"}
+        ]
+      }
+    ]
+  }
+]

@@ -1,23 +1,37 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ContentEntry from './ContentEntry';
 
-export default class Grid extends React.Component {
+import MinimalContentEntry from './MinimalContentEntry';
+import DetailedContentEntry from './DetailedContentEntry';
+
+export default class ContentContainer extends React.Component {
+
+	constructor(props){
+		super(props);
+		this.getContentEntry = this.getContentEntry.bind(this);
+	}
+
+	getContentEntry(){
+		if(this.props.contentType === "detailed"){
+			return <div className="content-container">
+				<DetailedContentEntry { ...this.props }/>
+			</div>;
+		} else {
+			return <div className="content-container">
+				<MinimalContentEntry { ...this.props }/>
+			</div>;
+		}
+	}
 
 	render() {
 		return (
 			<div className="content-container">
-				<ContentEntry { ...this.props }/>
+				{ this.getContentEntry() }
 			</div>
 		);
 	}
 }
 
-Grid.propTypes = {
-	header: PropTypes.string.isRequired,
-	sidebarImage: PropTypes.object.isRequired,
-	content: PropTypes.string.isRequired,
-	footer: PropTypes.string.isRequired
+ContentContainer.propTypes = {
+	contentType: PropTypes.string.isRequired
 };
-
-

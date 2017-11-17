@@ -11,6 +11,28 @@ import EmailIcon from '../../images/icons/icon-email.svg';
 
 export default class Header extends React.Component {
 
+	constructor(props) {
+		super(props);
+		this.downloadResume = this.downloadResume.bind(this);
+
+		this.state = { iFrameRef: undefined };
+	}
+
+	addRefToLocalState = (frame) => {
+		try {
+			this.setState({
+				iFrameRef: frame
+			});
+		} catch (e) {
+			console.log(e);
+		}
+	};
+
+	downloadResume(){
+		this.state.iFrameRef.contentWindow.document.write(Resume.toString());
+		this.state.iFrameRef.contentWindow.document.close();
+	}
+
 	render() {
 		return (
 			<div className="page-header">
@@ -28,6 +50,11 @@ export default class Header extends React.Component {
 					<div className="header-item">
 						<span className="hor-rhythm-1">
 							<Link to={'/portfolio/experience'}><b>EXPERIENCE</b></Link>
+						</span>
+					</div>
+					<div className="header-item">
+						<span className="hor-rhythm-1">
+							<Link to={'/portfolio/skills'}><b>SKILLS</b></Link>
 						</span>
 					</div>
 					<div className="header-item">
@@ -68,20 +95,15 @@ export default class Header extends React.Component {
 					</div>
 					<div className="header-item">
 						<span className="hor-rhythm-1">
-							<img width="25px" height="25px" src={ResumeIcon}/>
+							<button className="phony-button" onClick={ this.downloadResume } title="Download Resume">
+								<img width="25px" height="25px" src={ResumeIcon}/>
+							</button>
 						</span>
 					</div>
 				</div>
-
 				<iframe src="about:blank"
 								className="iframe-hidden"
-								ref={(frame) => {
-									try {
-										frame.contentWindow.document.write(Resume.toString());
-									} catch (e) {
-										console.log(e);
-									}
-								}}
+								ref={ this.addRefToLocalState }
 				/>
 			</div>
 		);

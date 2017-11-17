@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default class Grid extends React.Component {
+export default class MinimalContentEntry extends React.Component {
 
 	render() {
 		return (
@@ -11,7 +11,9 @@ export default class Grid extends React.Component {
 				</div>
 				<div className="content-box content-sidebar">
 					{this.props.sidebarText}
-					<img src={this.props.sidebarImage}/>
+					<div>
+						<img className="content-sidebar-image" src={this.props.sidebarImageURL}/>
+					</div>
 				</div>
 				<div className="content-box content-content">
 					{this.props.content}
@@ -22,10 +24,10 @@ export default class Grid extends React.Component {
 	}
 }
 
-Grid.propTypes = {
+MinimalContentEntry.propTypes = {
 	header: PropTypes.string.isRequired,
 	sidebarText: PropTypes.string.isRequired,
-	sidebarImage: PropTypes.object,
+	sidebarImageURL: PropTypes.string,
 	content: PropTypes.string.isRequired,
 	footer: PropTypes.string.isRequired
 };

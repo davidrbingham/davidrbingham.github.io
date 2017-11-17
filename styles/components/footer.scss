@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .footer-item-left {
@@ -19,6 +19,6 @@
 }
 
 .personal-logo-container {
-  height: 2em;
-  margin-top: -15em;
+  height: 2.5em;
+  padding-top: 3em;
 }

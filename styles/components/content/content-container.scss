@@ -8,11 +8,12 @@
 .content-wrapper {
   display: grid;
   grid-gap: 5px;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 30% 70%;
   grid-template-areas:
           "content-sidebar content-title"
           "content-sidebar content-content"
           "content-sidebar content-footer";
+  padding-bottom: 1em;
 }
 
 .content-box {
@@ -22,6 +23,7 @@
 .content-sidebar {
   grid-area: content-sidebar;
   align-self: center;
+  text-align: center;
 }
 
 .content-content {

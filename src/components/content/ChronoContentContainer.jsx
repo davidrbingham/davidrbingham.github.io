@@ -1,14 +1,17 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import ContentContainer from '../../components/content/ContentContainer';
-import educationalHistory from '../../../json/education.json';
 
-export default class EducationContent extends React.Component {
+export default class ChronoContentContainer extends React.Component {
 
-	getEducationContentEntries() {
-		return educationalHistory.map((entry, index) => {
+	getContentEntries() {
+		return this.props.contents && this.props.contents.map((entry, index) => {
 			return <ContentContainer key={index}
-															 contentType="minimal"
+															 contentType="detailed"
 															 header={entry.header}
+															 title={entry.title}
+															 description={entry.description}
 															 sidebarText={entry.sidebarText}
 															 sidebarImageURL={entry.sidebarImageURL}
 															 content={entry.content}
@@ -19,8 +22,12 @@ export default class EducationContent extends React.Component {
 	render() {
 		return (
 			<div className="page-content">
-				{ this.getEducationContentEntries() }
+				{ this.getContentEntries() }
 			</div>
 		);
 	}
 }
+
+ChronoContentContainer.propTypes = {
+	contents: PropTypes.object.isRequired
+};

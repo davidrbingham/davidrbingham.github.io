@@ -7,6 +7,7 @@ import EducationPage from './pages/education/EducationPage';
 import CertificationPage from './pages/certifications/CertificationPage';
 import DevelopmentPage from './pages/development/DevelopmentPage';
 import ExperiencePage from './pages/experience/ExperiencePage';
+import SkillsPage from './pages/skills/SkillsPage';
 
 export default class App extends React.Component {
 	render() {
@@ -17,6 +18,7 @@ export default class App extends React.Component {
 					<Route path="/portfolio/education" component={ EducationPage }/>
 					<Route path="/portfolio/certifications" component={ CertificationPage }/>
 					<Route path="/portfolio/development" component={ DevelopmentPage }/>
+					<Route path="/portfolio/skills" component={ SkillsPage }/>
 					<Route path="/portfolio/experience" component={ ExperiencePage }/>
 				</Switch>
 			</BrowserRouter>

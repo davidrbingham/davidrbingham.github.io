@@ -51,5 +51,9 @@ module.exports = [
 		include: [
 			path.resolve(__dirname, "resume")
 		]
+	},
+	{
+		test: /\.json$/,
+		loader: "json-loader"
 	}
 ];

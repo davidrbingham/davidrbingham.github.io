@@ -24,12 +24,12 @@ html {
 .page-sidebar {
   grid-area: page-sidebar;
   align-self: center;
-  padding-left: 3em;
-  padding-bottom: 15em;
+  margin-top: -15em;
+  padding-left: 5em;
 }
 
 .page-content {
-  min-width: 500px;
+  max-width: 40em;
   grid-area: page-content;
   align-self: center;
   justify-self: center;
@@ -37,7 +37,5 @@ html {
 
 .page-footer {
   grid-area: page-footer;
-  padding: 10px;
-  align-self: left;
-  justify-self: left;
+  padding: 1em 1em 1em 5em;
 }
