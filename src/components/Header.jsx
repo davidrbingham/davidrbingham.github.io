@@ -37,68 +37,73 @@ export default class Header extends React.Component {
 		return (
 			<div className="page-header">
 				<div className="header-container">
-					<div className="header-item">
+
+					<div className="header-links-container">
+						<div className="header-item">
 						<span className="hor-rhythm-1">
 							<Link to={'/'}><b>HOME</b></Link>
 						</span>
-					</div>
-					<div className="header-item">
+						</div>
+						<div className="header-item">
 						<span className="hor-rhythm-1">
 							<Link to={'/portfolio/education'}><b>EDUCATION</b></Link>
 						</span>
-					</div>
-					<div className="header-item">
+						</div>
+						<div className="header-item">
 						<span className="hor-rhythm-1">
 							<Link to={'/portfolio/experience'}><b>EXPERIENCE</b></Link>
 						</span>
-					</div>
-					<div className="header-item">
+						</div>
+						<div className="header-item">
 						<span className="hor-rhythm-1">
 							<Link to={'/portfolio/skills'}><b>SKILLS</b></Link>
 						</span>
-					</div>
-					<div className="header-item">
+						</div>
+						<div className="header-item">
 						<span className="hor-rhythm-1">
 							<Link to={'/portfolio/certifications'}><b>CERTIFICATIONS</b></Link>
 						</span>
-					</div>
-					<div className="header-item">
+						</div>
+						<div className="header-item">
 						<span className="hor-rhythm-1">
 							<Link to={'/portfolio/development'}><b>WORKING ON</b></Link>
 						</span>
-					</div>
-					<div className="header-item">
+						</div>
+						<div className="header-item">
 						<span className="hor-rhythm-1">
 							<b>BLOG</b>
 						</span>
+						</div>
 					</div>
 
-					<div className="header-item">
+					<div className="header-contact-container">
+						<div className="header-item">
 						<span className="hor-rhythm-1">
 							<img width="25px" height="25px" src={GitHubLogo}/>
 						</span>
-					</div>
-					<div className="header-item">
+						</div>
+						<div className="header-item">
 						<span className="hor-rhythm-1">
 							<img width="25px" height="25px" src={LinkedinLogo}/>
 						</span>
-					</div>
-					<div className="header-item">
+						</div>
+						<div className="header-item">
 						<span className="hor-rhythm-1">
 							<img width="25px" height="25px" src={TwitterLogo}/>
 						</span>
-					</div>
-					<div className="header-item">
+						</div>
+						<div className="header-item">
 						<span className="hor-rhythm-1">
 							<img width="25px" height="25px" src={EmailIcon}/>
 						</span>
-					</div>
-					<div className="header-item">
+						</div>
+						<div className="header-item">
 						<span className="hor-rhythm-1">
 							<button className="phony-button" onClick={ this.downloadResume } title="Download Resume">
 								<img width="25px" height="25px" src={ResumeIcon}/>
 							</button>
 						</span>
+						</div>
 					</div>
 				</div>
 				<iframe src="about:blank"

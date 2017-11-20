@@ -1,45 +1,131 @@
 [
   {
-    "header": "Allstate",
-    "title": "Software Developer",
+    "header": "Software Developer (Band E)",
+    "title": "Relationship Platform - Home",
+    "period": {
+      "start": "October 2016",
+      "end": "Present"
+    },
+    "description": "Development of Home Line of Business for the Relationship Platform Initiative",
+    "sidebarText": "Allstate Northern Ireland",
+    "sidebarImageURL": "http://www.davidbingham.me/images/logos/logo-allstate.svg",
+    "content": [
+      {
+        "contentTitle": "Roles and Responsibilities",
+        "details": [
+          {"description": "To complete"}
+        ]
+      },
+      {
+        "contentTitle": "Technologies",
+        "details": [
+          {"description": "React, Redux, Redux-Saga, Redux-Thunk, Jison (lexical parsing), ES6/ES7 (Babel), Node scripts, Groovy"}
+        ]
+      },
+      {
+        "contentTitle": "Tools",
+        "details": [
+          {"description": "Linux, Intellij, Cloud Foundry, Git, Github Enterprise, Jenkins, Nodejs, NPM, JIRA"}
+        ]
+      },
+      {
+        "contentTitle": "Testing Frameworks",
+        "details": [
+          {"description": "Jest, Enzyme"}
+        ]
+      }
+    ]
+  },
+  {
+    "header": "Software Developer (Band D)",
+    "title": "Relationship Platform - Foundational Team",
+    "period": {
+      "start": "January 2016",
+      "end": "October 2016"
+    },
     "description": "Foundational PoC for the development of a modern front-end UX called Relationship Platform, permitting Allstate agents to concurrently write business for multiple insurance products.",
-    "sidebarText": "January 2016 - Present",
+    "sidebarText": "Allstate Northern Ireland",
     "sidebarImageURL": "http://www.davidbingham.me/images/logos/logo-allstate.svg",
     "content": [
       {
         "contentTitle": "Roles and Responsibilities",
         "details": [
-          {"description": "s"}
+          {"description": "Selection for this role involved a two-stage process to determine suitability for pairing."},
+          {"description": "Methodology followed was eXtreme Programming (XP), pairing directly with experienced resources from Pivotal Labs and Allstate resources in Chicago."},
+          {"description": "Primary goal was to build foundational frameworks and components, to document standards and to provide ongoing leadership to 1 of the 5 product teams which will form following the completion of Phase 1."},
+          {"description": "Completion of stories (tracked through Pivotal Tracker). All development work strictly completed using TDD"},
+          {"description": "To provide domain knowledge and support for Allstate insurance products, helping to shape foundational design outcomes"},
+          {"description": "Participation in weekly IPMs (Iteration Planning Meetings), weekly team retros and periodic tech retros"}
         ]
-      }
-    ]
-  },
-  {
-    "header": "Allstate",
-    "title": "Software Developer",
-    "description": "Some Description",
-    "sidebarText": "January 2016 - Present",
-    "sidebarImageURL": "http://www.davidbingham.me/images/logos/logo-allstate.svg",
-    "content": [
+      },
       {
-        "contentTitle": "Roles and Responsibilities",
+        "contentTitle": "Technologies",
         "details": [
-          {"description": "s"}
+          {"description": "React, Redux, Redux-Saga, Redux-Thunk, Jison (lexical parsing), Spring Boot, Java (v1.8), ES6/ES7 (Babel), Webpack, SASS, Netflix Zuul, Node scripts"}
+        ]
+      },
+      {
+        "contentTitle": "Tools",
+        "details": [
+          {"description": "Mac OS 10, Linux, Intellij, Cloud Foundry, Git, Github Enterprise, Jenkins, Nodejs, NPM, Pivotal Tracker, ScreenHero (remote pairing)"}
+        ]
+      },
+      {
+        "contentTitle": "Testing Frameworks",
+        "details": [
+          {"description": "JUnit 4, Mockito, Jest, Enzyme"}
         ]
       }
     ]
   },
   {
-    "header": "CVS",
-    "title": "Software Developer",
-    "description": "Some Description",
-    "sidebarText": "January 2016 - Present",
+    "header": "Principal Software Developer",
+    "title": "Discontinued Product Removal Support",
+    "period": {
+      "start": "April 2014",
+      "end": "December 2015"
+    },
+    "description": "Development of an AngularJS application based on a RESTful API providing the ability for Retail Analysts to discontinue products.",
+    "sidebarText": "CVS Health",
     "sidebarImageURL": "http://www.davidbingham.me/images/logos/logo-cvs.svg",
     "content": [
       {
         "contentTitle": "Roles and Responsibilities",
         "details": [
-          {"description": "s"}
+          {"description": "Technical leadership to resources in Belfast and onsite in Rhode Island."},
+          {"description": "Identification and allocation of project tasks."},
+          {"description": "Tracking of project tasks using a Kanban board with daily stand-ups."},
+          {"description": "Effective communication of technical solutions to both technical and non-technical members of the development team, to ensure ideas are received and understood by all."},
+          {"description": "Working directly with the Enterprise Architect to ensure that the application is scalable into the future."},
+          {"description": "Design of an authentication solution using SiteMinder."},
+          {"description": "Design of a resource based authorization solution to provide security services to an expanding collection of applications."},
+          {"description": "Identification of appropriate technologies to replace unsupported or aging frameworks. Design of AngularJS modules and establishment of standards"},
+          {"description": "Creation of a build strategy to centralize all AngularJS modules enabling reuse between projects"},
+          {"description": "Configuration of Maven plugins to output minified Javascript resources to be easily consumed within other AngularJS projects."},
+          {"description": "Inclusion of both client and server side testing frameworks as part of the build process."},
+          {"description": "Design of a suitable project structure to facilitate Maven build scripts, and to ensure that the hierarchy of projects as they exist in the SVN repository is manageable going forward."},
+          {"description": "Utilization of SonarQube to help assess the quality of the code base."},
+          {"description": "Travel onsite to work directly with the BA and to prototype screen layouts, and to liaise with onsite developers."},
+          {"description": "Mentoring of junior team members and an active involvement in code reviews."},
+          {"description": "Source Control and Configuration Management."}
+        ]
+      },
+      {
+        "contentTitle": "Technologies",
+        "details": [
+          {"description": "Java (v1.8), Spring (v4), Maven (v3), xStream, DHTMLX, AngularJS, Twitter Bootstrap (v3) with Less, JDBC (Spring Templates), myBatis, RESTful services, SQL, Unix/Linux (limited)"}
+        ]
+      },
+      {
+        "contentTitle": "Tools",
+        "details": [
+          {"description": "Eclipse, Weblogic, Oracle SQL Developer, Tortoise, Subversion, Tomcat"}
+        ]
+      },
+      {
+        "contentTitle": "Testing Frameworks",
+        "details": [
+          {"description": "JUnit, Mockito, PowerMock, Jasmine, Karma (test runner)"}
         ]
       }
     ]

@@ -1,21 +1,81 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import RightIcon from '../../../images/icons/icon-right.svg';
+import LeftIcon from '../../../images/icons/icon-left.svg';
+
 import ContentContainer from '../../components/content/ContentContainer';
+import ChronoBar from './ChronoBar';
 
 export default class ChronoContentContainer extends React.Component {
 
+	constructor(props){
+		super(props);
+		this.state = { containerIndex: 0 };
+	}
+
 	getContentEntries() {
-		return this.props.contents && this.props.contents.map((entry, index) => {
-			return <ContentContainer key={index}
-															 contentType="detailed"
-															 header={entry.header}
-															 title={entry.title}
-															 description={entry.description}
-															 sidebarText={entry.sidebarText}
-															 sidebarImageURL={entry.sidebarImageURL}
-															 content={entry.content}
-															 footer={entry.footer}/>;
+		const entry = this.props.contents[this.state.containerIndex];
+		return (<div>
+			{this.getChronoHeader(entry)}
+			<ContentContainer contentType="detailed"
+												header={entry.header}
+												title={entry.title}
+												description={entry.description}
+												sidebarText={entry.sidebarText}
+												sidebarImageURL={entry.sidebarImageURL}
+												content={entry.content}
+												footer={entry.footer}/>
+			{this.getChronoFooter()}
+		</div>);
+	}
+
+	getChronoHeader(entry){
+		return <div className="chrono-header-container">
+			{this.getMoveLeftButton()}
+			{`${entry.period.start} - ${entry.period.end}`}
+			{this.getMoveRightButton()}
+		</div>;
+	}
+
+	getChronoFooter(){
+		const options = this.props.contents && this.props.contents.map((entry, index) => {
+			return {
+				title: `${entry.period.start} - ${entry.period.end}`
+			};
+		});
+		return <div className="chrono-footer-container">
+			<ChronoBar
+				options={options}
+				callback={(index) => {
+					this.setState({
+						containerIndex: index
+					});
+				}}/>
+		</div>;
+	}
+
+	getMoveRightButton(){
+		return <button className="phony-button" onClick={ () => {this.navigate(1);} } title="Download Resume">
+			<img width="25px" height="25px" src={RightIcon}/>
+		</button>;
+	}
+
+	getMoveLeftButton(){
+		return <button className="phony-button" onClick={ () => {this.navigate(-1);} } title="Download Resume">
+			<img width="25px" height="25px" src={LeftIcon}/>
+		</button>;
+	}
+
+	navigate(offset){
+		let newIndex = this.state.containerIndex + offset;
+		if(newIndex >= this.props.contents.length) {
+			newIndex = 0;
+		} else if(newIndex < 0){
+			newIndex = this.props.contents.length - 1;
+		}
+		this.setState({
+			containerIndex: newIndex
 		});
 	}
 
@@ -29,5 +89,5 @@ export default class ChronoContentContainer extends React.Component {
 }
 
 ChronoContentContainer.propTypes = {
-	contents: PropTypes.object.isRequired
+	contents: PropTypes.array.isRequired
 };

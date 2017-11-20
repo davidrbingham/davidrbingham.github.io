@@ -12,7 +12,7 @@ export default class EducationContent extends React.Component {
 															 sidebarText={entry.sidebarText}
 															 sidebarImageURL={entry.sidebarImageURL}
 															 content={entry.content}
-															 footer={entry.footer}/>;
+															 footnote={entry.footnote}/>;
 		});
 	}
 

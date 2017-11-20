@@ -53,7 +53,7 @@ module.exports = {
     new DashboardPlugin(),
     new HtmlWebpackPlugin({
       template: './src/template.html',
-			title: 'Some Title',
+			title: 'Portfolio Site for David Bingham',
 			favicon: './images/favicons/favi-portfolio.ico',
       files: {
         css: ['style.css'],

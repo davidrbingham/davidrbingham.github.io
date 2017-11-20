@@ -10,9 +10,9 @@ export default class DetailedContentEntry extends React.Component {
 	}
 
 	getContentEntries(){
-		return this.props.content && this.props.content.map((contentEntry) => {
-			return <div>
-					{contentEntry.contentTitle}
+		return this.props.content && this.props.content.map((contentEntry, index) => {
+			return <div key={index}>
+					<b>{contentEntry.contentTitle}</b>
 					<ul>
 						{this.getDetailEntries(contentEntry.details)}
 					</ul>
@@ -21,8 +21,8 @@ export default class DetailedContentEntry extends React.Component {
 	}
 
 	getDetailEntries(details){
-		return details && details.map((detailEntry) => {
-			return <li>
+		return details && details.map((detailEntry, index) => {
+			return <li key={index}>
 				{ detailEntry.description }
 			</li>;
 		});
@@ -32,20 +32,19 @@ export default class DetailedContentEntry extends React.Component {
 		return (
 			<div className="content-wrapper">
 				<div className="content-box content-title">
-					<b>{this.props.header}</b>
+					<b><i>{this.props.header}</i></b>
 				</div>
 				<div className="content-box content-sidebar">
-					{this.props.sidebarText}
+					<b>{this.props.sidebarText}</b>
 					<div>
 						<img className="content-sidebar-image" src={this.props.sidebarImageURL}/>
 					</div>
 				</div>
 				<div className="content-box content-content">
-					<p>{this.props.title}</p>
+					<div><b>{this.props.title}</b></div>
 					<p>{this.props.description}</p>
 					{this.getContentEntries()}
 				</div>
-				<div className="content-box content-footer">{this.props.footer}</div>
 			</div>
 		);
 	}
@@ -57,6 +56,5 @@ DetailedContentEntry.propTypes = {
 	description: PropTypes.string.isRequired,
 	sidebarText: PropTypes.string.isRequired,
 	sidebarImageURL: PropTypes.string,
-	content: PropTypes.array.isRequired,
-	footer: PropTypes.string
+	content: PropTypes.array.isRequired
 };

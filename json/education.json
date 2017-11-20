@@ -4,21 +4,21 @@
     "sidebarText": "1992-1994",
     "sidebarImageURL": "http://www.davidbingham.me/images/logos/logo-uu.svg",
     "content": "Geographic Information Systems",
-    "footer": "Distinction"
+    "footnote": "Distinction"
   },
   {
     "header": "Queen's University Belfast",
     "sidebarText": "1992-1994",
     "sidebarImageURL": "http://www.davidbingham.me/images/logos/logo-qub.svg",
     "content": "MSc Computer Science and Applications",
-    "footer": "Pass"
+    "footnote": "Pass"
   },
   {
     "header": "Queen's University Belfast",
     "sidebarText": "1992-1994",
     "sidebarImageURL": "http://www.davidbingham.me/images/logos/logo-qub.svg",
     "content": "BSc Geography, Archaeology and Palaeocology",
-    "footer": "Result Obtained : 2:1"
+    "footnote": "Result Obtained : 2:1"
   }
 ]
 

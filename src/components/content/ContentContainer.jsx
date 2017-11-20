@@ -13,11 +13,11 @@ export default class ContentContainer extends React.Component {
 
 	getContentEntry(){
 		if(this.props.contentType === "detailed"){
-			return <div className="content-container">
+			return <div>
 				<DetailedContentEntry { ...this.props }/>
 			</div>;
 		} else {
-			return <div className="content-container">
+			return <div>
 				<MinimalContentEntry { ...this.props }/>
 			</div>;
 		}
