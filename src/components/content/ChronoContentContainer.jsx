@@ -81,7 +81,7 @@ export default class ChronoContentContainer extends React.Component {
 
 	render() {
 		return (
-			<div className="page-content">
+			<div>
 				{ this.getContentEntries() }
 			</div>
 		);

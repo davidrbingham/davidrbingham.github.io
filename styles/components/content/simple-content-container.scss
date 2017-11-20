@@ -1,6 +1,17 @@
 .simple-content-container {
-  background: rgba(0, 0, 0, 0.1);
-  overflow-y: hidden;
-  overflow-x: hidden;
-  padding: 2em;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 1025px) {
+  .simple-content-container {
+    padding: 1em;
+  }
+}
+
+@media (min-width: 1025px) {
+  .simple-content-container {
+    padding: 2em;
+    max-height: 65vh;
+    overflow-y: auto;
+  }
 }

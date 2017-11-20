@@ -1,11 +1,13 @@
 .content-container {
-  background: rgba(0, 0, 0, 0.1);
-  overflow-y: auto;
   overflow-x: hidden;
-  max-height: 30em;
 }
 
 @media (max-width: 1025px) {
+  .content-container {
+    background: rgba(0, 0, 0, 0.05);
+    overflow-y: hidden;
+  }
+
   .content-wrapper {
     display: grid;
     grid-gap: 0.5em;
@@ -16,6 +18,12 @@
 }
 
 @media (min-width: 1025px) {
+  .content-container {
+    background: rgba(0, 0, 0, 0.05);
+    overflow-y: auto;
+    max-height: 60vh;
+  }
+
   .content-wrapper {
     display: grid;
     grid-gap: 0.5em;

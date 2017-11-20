@@ -1,8 +1,26 @@
 html {
-  height: 100%;
-  background: linear-gradient(15deg, #2E3192, #29ABE2 100%) no-repeat;
+  height: 100vh;
   color: white;
   font-family: Dosis, sans-serif;
+
+}
+
+@media (max-width: 1025px) {
+  html {
+    background-color: #3685E2;
+  }
+}
+
+@media (min-width: 1025px) {
+  html {
+    background: linear-gradient(15deg, #2E3192, #29ABE2 100%) no-repeat;
+  }
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 @media (max-width: 1025px) {
@@ -36,13 +54,13 @@ html {
 
   .page-wrapper {
     display: grid;
-    height: 95vh;
     grid-template-columns: 40% 60%;
     grid-template-rows: 10% 80% 10%;
     grid-template-areas:
             "page-header  page-header"
             "page-sidebar page-content"
             "page-footer  page-footer";
+    height: 100vh;
   }
 
   .page-header {
@@ -53,15 +71,14 @@ html {
   .page-sidebar {
     grid-area: page-sidebar;
     align-self: center;
-    margin-top: -15em;
-    padding-left: 5em;
+    padding: 5em;
   }
 
   .page-content {
     grid-area: page-content;
     align-self: center;
     justify-self: center;
-    padding: 5em;
+    padding: 3em;
     z-index: 1000;
   }
 
