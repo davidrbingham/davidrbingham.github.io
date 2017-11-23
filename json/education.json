@@ -1,24 +1,62 @@
 [
   {
-    "header": "University of Ulster",
-    "sidebarText": "1992-1994",
+    "header": "M.Sc. Geographic Information Systems",
+    "title": "Result Obtained : Pass with Distinction",
+    "period": {
+      "start": "2005",
+      "end": "2008"
+    },
+    "description": "Presented with the Land and Property Service course award for ‘Outstanding contribution to GIS’ for the development of a .NET based application, written in Visual Basic, to help identify suitable marine conservation areas within Northern Ireland.",
+    "sidebarText": "University of Ulster",
     "sidebarImageURL": "http://www.davidbingham.me/images/logos/logo-uu.svg",
-    "content": "Geographic Information Systems",
-    "footnote": "Distinction"
+    "content": [
+      {
+        "contentTitle": "Modules Completed",
+        "details": [
+          {"description": "Spatial Analysis and Modeling                             (91)"},
+          {"description": "Spatial Data Management - Visual Basic with MapObjects    (89)"},
+          {"description": "GIS for Environmental Management                          (82)"},
+          {"description": "Decision Making in GIS                                    (73)"},
+          {"description": "GIS Databases (SQL Server)                                (91)"},
+          {"description": "Spatial Data Management (ESRI ArcGIS and SPSS)            (79)"},
+          {"description": "Image Analysis (ERDAS Imagine)                            (74)"},
+          {"description": "Principles of GIS                                         (68)"}
+        ]
+      }
+    ]
   },
   {
-    "header": "Queen's University Belfast",
-    "sidebarText": "1992-1994",
+    "header": "M.Sc. Computer Science and Applications",
+    "title": "Result Obtained : Pass",
+    "period": {
+      "start": "2002",
+      "end": "2003"
+    },
+    "description": "In this conversion Masters course I had my first exposure to Computer Science, and to Java. I obtained insight into many of the algorithms and data structures which I use today, and it served as a solid foundation to the experience I have obtained since.",
+    "sidebarText": "Queen’s University Belfast",
     "sidebarImageURL": "http://www.davidbingham.me/images/logos/logo-qub.svg",
-    "content": "MSc Computer Science and Applications",
-    "footnote": "Pass"
+    "content": [
+      {
+        "contentTitle": "Modules Completed",
+        "details": [
+          {"description": "M.Sc. Dissertation                                        (63)"},
+          {"description": "Computer Programming (Java)                               (59)"},
+          {"description": "Software Engineering                                      (66)"},
+          {"description": "Algorithms and data-structures                            (67)"},
+          {"description": "Hypermedia Systems (HTML, CSS, Javascript)                (72)"}
+        ]
+      }
+    ]
   },
   {
-    "header": "Queen's University Belfast",
-    "sidebarText": "1992-1994",
-    "sidebarImageURL": "http://www.davidbingham.me/images/logos/logo-qub.svg",
-    "content": "BSc Geography, Archaeology and Palaeocology",
-    "footnote": "Result Obtained : 2:1"
+    "header": "B.Sc. Geography, Archaeology & Palaeocology",
+    "title": "Result Obtained : 2:1",
+    "period": {
+      "start": "1999",
+      "end": "2002"
+    },
+    "description": "Initially when I left secondary education I was interested in Geography. As things progressed I realized I had a greater interest in Computers, which I explored upon completed of my B.Sc.",
+    "sidebarText": "Queen’s University Belfast",
+    "sidebarImageURL": "http://www.davidbingham.me/images/logos/logo-qub.svg"
   }
 ]
-

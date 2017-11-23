@@ -16,18 +16,31 @@ export default class ChronoContentContainer extends React.Component {
 
 	getContentEntries() {
 		const entry = this.props.contents[this.state.containerIndex];
-		return (<div>
-			{this.getChronoHeader(entry)}
-			<ContentContainer contentType="detailed"
-												header={entry.header}
-												title={entry.title}
-												description={entry.description}
-												sidebarText={entry.sidebarText}
-												sidebarImageURL={entry.sidebarImageURL}
-												content={entry.content}
-												footer={entry.footer}/>
-			{this.getChronoFooter()}
-		</div>);
+
+		if(this.props.contentType === "detailed"){
+			return (<div>
+				{this.getChronoHeader(entry)}
+				<ContentContainer contentType="detailed"
+													header={entry.header}
+													title={entry.title}
+													description={entry.description}
+													sidebarText={entry.sidebarText}
+													sidebarImageURL={entry.sidebarImageURL}
+													content={entry.content}
+													footer={entry.footer}/>
+				{this.getChronoFooter()}
+			</div>);
+		} else {
+			return <div>
+				{this.getChronoHeader(entry)}
+				<ContentContainer header={entry.header}
+													sidebarText={entry.sidebarText}
+													sidebarImageURL={entry.sidebarImageURL}
+													content={entry.content}
+													footnote={entry.footnote}/>
+				{this.getChronoFooter()}
+			</div>;
+		}
 	}
 
 	getChronoHeader(entry){
@@ -39,7 +52,7 @@ export default class ChronoContentContainer extends React.Component {
 	}
 
 	getChronoFooter(){
-		const options = this.props.contents && this.props.contents.map((entry, index) => {
+		const options = this.props.contents && this.props.contents.map((entry) => {
 			return {
 				title: `${entry.period.start} - ${entry.period.end}`
 			};
@@ -89,5 +102,6 @@ export default class ChronoContentContainer extends React.Component {
 }
 
 ChronoContentContainer.propTypes = {
-	contents: PropTypes.array.isRequired
+	contents: PropTypes.array.isRequired,
+	contentType: PropTypes.string
 };

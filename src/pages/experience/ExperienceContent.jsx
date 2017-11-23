@@ -7,7 +7,7 @@ export default class ExperienceContent extends React.Component {
 	render() {
 		return (
 			<div className="page-content">
-				<ChronoContentContainer contents={experience}/>
+				<ChronoContentContainer contents={experience} contentType="detailed"/>
 			</div>
 		);
 	}

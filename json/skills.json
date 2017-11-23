@@ -1,0 +1,17 @@
+[
+  {
+    "description": "Java",
+    "percentage": 70,
+    "imageURL": "http://www.davidbingham.me/images/logos/logo-java.svg"
+  },
+  {
+    "description": "Javascript",
+    "percentage": 80,
+    "imageURL": "http://www.davidbingham.me/images/logos/logo-javascript.svg"
+  },
+  {
+    "description": "Python",
+    "percentage": 20,
+    "imageURL": "http://www.davidbingham.me/images/logos/logo-python.svg"
+  }
+]

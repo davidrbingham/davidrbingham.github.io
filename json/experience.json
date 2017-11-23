@@ -19,19 +19,19 @@
       {
         "contentTitle": "Technologies",
         "details": [
-          {"description": "React, Redux, Redux-Saga, Redux-Thunk, Jison (lexical parsing), ES6/ES7 (Babel), Node scripts, Groovy"}
+          {"description": "React, Redux, Redux-Saga, Redux-Thunk, Jison (lexical parsing), ES6/ES7 (Babel), Node scripts, Groovy."}
         ]
       },
       {
         "contentTitle": "Tools",
         "details": [
-          {"description": "Linux, Intellij, Cloud Foundry, Git, Github Enterprise, Jenkins, Nodejs, NPM, JIRA"}
+          {"description": "Linux, Intellij, Cloud Foundry, Git, Github Enterprise, Jenkins, Nodejs, NPM, JIRA."}
         ]
       },
       {
         "contentTitle": "Testing Frameworks",
         "details": [
-          {"description": "Jest, Enzyme"}
+          {"description": "Jest, Enzyme."}
         ]
       }
     ]
@@ -53,27 +53,27 @@
           {"description": "Selection for this role involved a two-stage process to determine suitability for pairing."},
           {"description": "Methodology followed was eXtreme Programming (XP), pairing directly with experienced resources from Pivotal Labs and Allstate resources in Chicago."},
           {"description": "Primary goal was to build foundational frameworks and components, to document standards and to provide ongoing leadership to 1 of the 5 product teams which will form following the completion of Phase 1."},
-          {"description": "Completion of stories (tracked through Pivotal Tracker). All development work strictly completed using TDD"},
-          {"description": "To provide domain knowledge and support for Allstate insurance products, helping to shape foundational design outcomes"},
-          {"description": "Participation in weekly IPMs (Iteration Planning Meetings), weekly team retros and periodic tech retros"}
+          {"description": "Completion of stories (tracked through Pivotal Tracker). All development work strictly completed using TDD."},
+          {"description": "To provide domain knowledge and support for Allstate insurance products, helping to shape foundational design outcomes."},
+          {"description": "Participation in weekly IPMs (Iteration Planning Meetings), weekly team retros and periodic tech retros."}
         ]
       },
       {
         "contentTitle": "Technologies",
         "details": [
-          {"description": "React, Redux, Redux-Saga, Redux-Thunk, Jison (lexical parsing), Spring Boot, Java (v1.8), ES6/ES7 (Babel), Webpack, SASS, Netflix Zuul, Node scripts"}
+          {"description": "React, Redux, Redux-Saga, Redux-Thunk, Jison (lexical parsing), Spring Boot, Java (v1.8), ES6/ES7 (Babel), Webpack, SASS, Netflix Zuul, Node scripts."}
         ]
       },
       {
         "contentTitle": "Tools",
         "details": [
-          {"description": "Mac OS 10, Linux, Intellij, Cloud Foundry, Git, Github Enterprise, Jenkins, Nodejs, NPM, Pivotal Tracker, ScreenHero (remote pairing)"}
+          {"description": "Mac OS 10, Linux, Intellij, Cloud Foundry, Git, Github Enterprise, Jenkins, Nodejs, NPM, Pivotal Tracker, ScreenHero (remote pairing)."}
         ]
       },
       {
         "contentTitle": "Testing Frameworks",
         "details": [
-          {"description": "JUnit 4, Mockito, Jest, Enzyme"}
+          {"description": "JUnit 4, Mockito, Jest, Enzyme."}
         ]
       }
     ]
@@ -113,19 +113,154 @@
       {
         "contentTitle": "Technologies",
         "details": [
-          {"description": "Java (v1.8), Spring (v4), Maven (v3), xStream, DHTMLX, AngularJS, Twitter Bootstrap (v3) with Less, JDBC (Spring Templates), myBatis, RESTful services, SQL, Unix/Linux (limited)"}
+          {"description": "Java (v1.8), Spring (v4), Maven (v3), xStream, DHTMLX, AngularJS, Twitter Bootstrap (v3) with Less, JDBC (Spring Templates), myBatis, RESTful services, SQL, Unix/Linux (limited)."}
         ]
       },
       {
         "contentTitle": "Tools",
         "details": [
-          {"description": "Eclipse, Weblogic, Oracle SQL Developer, Tortoise, Subversion, Tomcat"}
+          {"description": "Eclipse, Weblogic, Oracle SQL Developer, Tortoise, Subversion, Tomcat."}
         ]
       },
       {
         "contentTitle": "Testing Frameworks",
         "details": [
-          {"description": "JUnit, Mockito, PowerMock, Jasmine, Karma (test runner)"}
+          {"description": "JUnit, Mockito, PowerMock, Jasmine, Karma (test runner)."}
+        ]
+      }
+    ]
+  },
+  {
+    "header": "Senior Software Developer",
+    "title": "What was this project called?",
+    "period": {
+      "start": "June 2103",
+      "end": "April 2014"
+    },
+    "description": "Development of a new multi-tiered JEE application using the Spring framework to manage CVS Store items.",
+    "sidebarText": "CVS Health",
+    "sidebarImageURL": "http://www.davidbingham.me/images/logos/logo-cvs.svg",
+    "content": [
+      {
+        "contentTitle": "Roles and Responsibilities",
+        "details": [
+          {"description": "Coordination of system design between the US, India and Belfast based developers and documentation of the agreed solutions."},
+          {"description": "Onsite travel to review technical solutions, and later to perform code reviews."},
+          {"description": "Mentoring and coaching of Junior resources providing guidance and feedback on their work to ensure that all work released was on-time and to the required standard."}
+        ]
+      },
+      {
+        "contentTitle": "Technologies",
+        "details": [
+          {"description": "Java (v1.6), Spring (v2), JSP, Struts (v1.1), xStream, Javascript, DHTMLX, JDBC (Spring Templates)."}
+        ]
+      },
+      {
+        "contentTitle": "Tools",
+        "details": [
+          {"description": "Eclipse, Weblogic, Oracle SQL Developer, Tortoise, Subversion."}
+        ]
+      }
+    ]
+  },
+  {
+    "header": "Senior Software Developer",
+    "title": "Allstate Alliance",
+    "period": {
+      "start": "March 2009",
+      "end": "June 2013"
+    },
+    "description": "Development of a multi-tiered JEE application for calculating and generating insurance policies.",
+    "sidebarText": "Allstate Northern Ireland",
+    "sidebarImageURL": "http://www.davidbingham.me/images/logos/logo-allstate.svg",
+    "content": [
+      {
+        "contentTitle": "Roles and Responsibilities",
+        "details": [
+          {"description": "Completing project work with clients based in the US and external vendors."},
+          {"description": "Working as an effective team member, providing technical guidance and technical leadership within the NI (Belfast and Derry) based team."},
+          {"description": "Mentoring of new and junior team members."},
+          {"description": "Providing out-of-hours support for critical applications as and when required."},
+          {"description": "Implementing all relevant quality and management procedures throughout all stages of the project lifecycle, at a CMM (Capability Maturity Model) level 3 standard."},
+          {"description": "Working independently on different projects and employing effective time management."},
+          {"description": "Travelling to the US to transition work and liaise with clients as and when required."},
+          {"description": "Creating technical design documents complete with UML and Sequence diagrams."},
+          {"description": "Holding technical design and code reviews."}
+        ]
+      },
+      {
+        "contentTitle": "Technologies",
+        "details": [
+          {"description": "Java/JEE (v1.6), Struts (v1.1), EJB 3.0, JSP, JSTL, Javascript, HTML, XML, SQL."}
+        ]
+      },
+      {
+        "contentTitle": "Tools",
+        "details": [
+          {"description": "Oracle SQL Developer, IBM Rational Application Developer, IBM ClearCase, IBM ClearQuest, Dynatrace (performance tracing)."}
+        ]
+      },{
+        "contentTitle": "Testing Frameworks",
+        "details": [
+          {"description": "JUnit, Mockito."}
+        ]
+      }
+    ]
+  },
+  {
+    "header": "Software Developer",
+    "title": "Allstate Alstar",
+    "period": {
+      "start": "March 2004",
+      "end": "March 2009"
+    },
+    "description": "Development of applications for generating insurance quotes on the mainframe & AS/400 platforms.",
+    "sidebarText": "Allstate Northern Ireland",
+    "sidebarImageURL": "http://www.davidbingham.me/images/logos/logo-allstate.svg",
+    "content": [
+      {
+        "contentTitle": "Roles and Responsibilities",
+        "details": [
+          {"description": "Transition of project work from onsite Illinois to Belfast over 7 weeks."},
+          {"description": "Mentoring of new and junior team members."},
+          {"description": "Providing out-of-hours support for critical applications as and when required."},
+          {"description": "Implementing all relevant quality and management procedures."},
+          {"description": "Working independently on different projects and employing effective time management."},
+          {"description": "Active involvement in code reviews."}
+        ]
+      },
+      {
+        "contentTitle": "Technologies",
+        "details": [
+          {"description": "Cobol, CSP, C, AS/400."}
+        ]
+      },
+      {
+        "contentTitle": "Tools",
+        "details": [
+          {"description": "Visual Age Cobol Generator."}
+        ]
+      }
+    ]
+  },
+  {
+    "header": "Volunteer Trainer.",
+    "title": "Basic education in common computer tools and utilities",
+    "period": {
+      "start": "January 2004",
+      "end": "March 2004"
+    },
+    "description": "Volunteer Trainer of basic computer skills to the elderly to help teach fundamentals of using a computer, navigation of websites, basic word processing tools and email.",
+    "sidebarText": "Age Concern",
+    "sidebarImageURL": "http://www.davidbingham.me/images/logos/logo-ac.svg",
+    "content": [
+      {
+        "contentTitle": "Roles and Responsibilities",
+        "details": [
+          {"description": "Show elderly users how to safely use and navigate through helpful websites."},
+          {"description": "Build user confidence in using communication protocols such as email, to help lonely elderly people keep in touch with friends and relatives."},
+          {"description": "Offer friendly conversation and advise to help build confidence in using unfamiliar interfaces, such as using a mouse and keyboard."},
+          {"description": "Creation of clear documentation so that users have a friendly guide to remind them of the steps to take to successfully use the computer at home."}
         ]
       }
     ]

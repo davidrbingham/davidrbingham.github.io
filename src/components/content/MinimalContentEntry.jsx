@@ -17,7 +17,7 @@ export default class MinimalContentEntry extends React.Component {
 				</div>
 				<div className="content-box content-content">
 					<p>{this.props.content}</p>
-					<p>{this.props.footnote}</p>
+					<p><b>{this.props.footnote}</b></p>
 				</div>
 			</div>
 		);
@@ -27,6 +27,7 @@ export default class MinimalContentEntry extends React.Component {
 MinimalContentEntry.propTypes = {
 	header: PropTypes.string.isRequired,
 	sidebarText: PropTypes.string.isRequired,
+	period: PropTypes.object.isRequired,
 	sidebarImageURL: PropTypes.string,
 	content: PropTypes.string.isRequired,
 	footnote: PropTypes.string.isRequired

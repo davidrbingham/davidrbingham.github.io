@@ -41,8 +41,8 @@ body {
 
   .page-content {
     grid-area: page-content;
-    align-self: center;
-    justify-self: center;
+    align-self: flex-start;
+    justify-self: flex-start;
   }
 
   .page-footer {
@@ -70,14 +70,14 @@ body {
 
   .page-sidebar {
     grid-area: page-sidebar;
-    align-self: center;
+    align-self: flex-start;
     padding: 5em;
   }
 
   .page-content {
     grid-area: page-content;
-    align-self: center;
-    justify-self: center;
+    align-self: flex-start;
+    justify-self: flex-start;
     padding: 3em;
     z-index: 1000;
   }
