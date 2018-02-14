@@ -13,19 +13,30 @@
       {
         "contentTitle": "Roles and Responsibilities",
         "details": [
-          {"description": "To complete"}
+          {"description": "Technical leader over a team with 20 developers, providing technical direction and support throughout the program."},
+          {"description": "Established a Github workflow and pull-request strategy to streamline the code review process."},
+          {"description": "Identified React and ES6 standards and documented these standards on our wiki and policed these as part of the code review process."},
+          {"description": "Built Jenkins pipelines (groovy scripts) for deploying to Cloud Foundry, ensuring all linting and testing remain above a given threshold."},
+          {"description": "Helped establish post-release branch and versioning (semantic) strategy."},
+          {"description": "Attended weekly scrum of scrums and all cross team meetings representing our line of business."},
+          {"description": "Primary participant in Program Increment (PI) Planning (as part of the scaled agile platform) which required travel to on-site Chicago."},
+          {"description": "Production support to include out of hours assistance to agents running live transactions."},
+          {"description": "Performance tweaking of React components (e.g. using shouldComponentUpdate for wasted renders, removing of unnecessarily large libraries such as lodash) and analysis of Service Layer response times using Dynatrace."},
+          {"description": "Analysis of production defects using tools such as Splunk and Dynatrace."},
+          {"description": "Interviewing of potential team members into our Product Technology Area."},
+          {"description": "Mentoring and support of team members. Support to other lines of business throughout the program."}
         ]
       },
       {
         "contentTitle": "Technologies",
         "details": [
-          {"description": "React, Redux, Redux-Saga, Redux-Thunk, Jison (lexical parsing), ES6/ES7 (Babel), Node scripts, Groovy."}
+          {"description": "React, Redux, Redux-Saga, Redux-Thunk, Jison (lexical parsing), ES6/ES7 (Babel), Lodash, Node scripts, Groovy."}
         ]
       },
       {
         "contentTitle": "Tools",
         "details": [
-          {"description": "Linux, Intellij, Cloud Foundry, Git, Github Enterprise, Jenkins, Nodejs, NPM, JIRA."}
+          {"description": "Linux, Intellij, Cloud Foundry, Git, Github Enterprise, Jenkins, Nodejs, NPM, JIRA, Artifactory."}
         ]
       },
       {
@@ -132,12 +143,12 @@
   },
   {
     "header": "Senior Software Developer",
-    "title": "What was this project called?",
+    "title": "Direct Store Delivery",
     "period": {
       "start": "June 2103",
       "end": "April 2014"
     },
-    "description": "Development of a new multi-tiered JEE application using the Spring framework to manage CVS Store items.",
+    "description": "Development of a new multi-tiered JEE application using the Spring framework to manage delivery of perishable items.",
     "sidebarText": "CVS Health",
     "sidebarImageURL": "http://www.davidbingham.me/images/logos/logo-cvs.svg",
     "content": [

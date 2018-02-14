@@ -28,7 +28,7 @@ export default class SkillsContent extends React.Component {
 	render() {
 		return (
 			<div className="page-content">
-				<div className="skills-container">
+				<div className="page-container">
 					<div>
 						<p>
 							The following are an overview of my skills and how I rate myself in using that skill.

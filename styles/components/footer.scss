@@ -2,23 +2,13 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
-.footer-item-left {
-  align-self: left;
-}
-
-.footer-item-right {
-  align-self: right;
-}
-
-.iceberg-container {
-  height: 30vh;
-  margin-top: -15em;
+.footer-item-center {
+  align-self: center;
 }
 
 .personal-logo-container {
-  height: 5vh;
-  margin-top: -15em;
+  height: 7vh;
 }

@@ -24,6 +24,7 @@ body {
 }
 
 @media (max-width: 1025px) {
+
   .page-wrapper {
     display: grid;
     grid-template-areas: "page-header"
@@ -52,6 +53,14 @@ body {
 
 @media (min-width: 1025px)  {
 
+  .app-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
   .page-wrapper {
     display: grid;
     grid-template-columns: 40% 60%;
@@ -61,6 +70,7 @@ body {
             "page-sidebar page-content"
             "page-footer  page-footer";
     height: 100vh;
+    max-width: 70%;
   }
 
   .page-header {

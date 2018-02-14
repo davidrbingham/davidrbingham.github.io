@@ -1,17 +1,18 @@
 import React from 'react';
-import ContentContainer from '../../components/content/ContentContainer';
-
-import QUBImage from '../../../images/logos/logo-qub.svg';
+import OCABadge from '../../../images/badges/badges-oca.png';
 
 export default class CertificationContent extends React.Component {
 
 	render() {
 		return (
 			<div className="page-content">
-				<ContentContainer header="Queen's University Belfast"
-													sidebarImage={QUBImage}
-													content="BSc Geography, Archaeology and Palaeocology"
-													footer="Result Obtained : 2:1"/>
+				<div className="page-container">
+					<p>
+						An overview of Industry Certifications and Badges I have obtained throughout my career.
+					</p>
+				  <br/>
+					<img className="certification-img-container" src={OCABadge}/>
+				</div>
 			</div>
 		);
 	}
