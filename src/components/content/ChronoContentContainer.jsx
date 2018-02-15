@@ -9,15 +9,15 @@ import ChronoBar from './ChronoBar';
 
 export default class ChronoContentContainer extends React.Component {
 
-	constructor(props){
+	constructor(props) {
 		super(props);
-		this.state = { containerIndex: 0 };
+		this.state = {containerIndex: 0};
 	}
 
 	getContentEntries() {
 		const entry = this.props.contents[this.state.containerIndex];
 
-		if(this.props.contentType === "detailed"){
+		if (this.props.contentType === "detailed") {
 			return (<div>
 				{this.getChronoHeader(entry)}
 				<ContentContainer contentType="detailed"
@@ -43,7 +43,7 @@ export default class ChronoContentContainer extends React.Component {
 		}
 	}
 
-	getChronoHeader(entry){
+	getChronoHeader(entry) {
 		return <div className="chrono-header-container">
 			{this.getMoveLeftButton()}
 			{`${entry.period.start} - ${entry.period.end}`}
@@ -51,7 +51,7 @@ export default class ChronoContentContainer extends React.Component {
 		</div>;
 	}
 
-	getChronoFooter(){
+	getChronoFooter() {
 		const options = this.props.contents && this.props.contents.map((entry) => {
 			return {
 				title: `${entry.period.start} - ${entry.period.end}`
@@ -68,23 +68,27 @@ export default class ChronoContentContainer extends React.Component {
 		</div>;
 	}
 
-	getMoveRightButton(){
-		return <button className="phony-button" onClick={ () => {this.navigate(1);} } title="Download Resume">
+	getMoveRightButton() {
+		return <button className="phony-button" onClick={() => {
+			this.navigate(1);
+		}} title="Download Resume">
 			<img width="25px" height="25px" src={RightIcon}/>
 		</button>;
 	}
 
-	getMoveLeftButton(){
-		return <button className="phony-button" onClick={ () => {this.navigate(-1);} } title="Download Resume">
+	getMoveLeftButton() {
+		return <button className="phony-button" onClick={() => {
+			this.navigate(-1);
+		}} title="Download Resume">
 			<img width="25px" height="25px" src={LeftIcon}/>
 		</button>;
 	}
 
-	navigate(offset){
+	navigate(offset) {
 		let newIndex = this.state.containerIndex + offset;
-		if(newIndex >= this.props.contents.length) {
+		if (newIndex >= this.props.contents.length) {
 			newIndex = 0;
-		} else if(newIndex < 0){
+		} else if (newIndex < 0) {
 			newIndex = this.props.contents.length - 1;
 		}
 		this.setState({
@@ -95,7 +99,7 @@ export default class ChronoContentContainer extends React.Component {
 	render() {
 		return (
 			<div>
-				{ this.getContentEntries() }
+				{this.getContentEntries()}
 			</div>
 		);
 	}

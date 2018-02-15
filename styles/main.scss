@@ -63,7 +63,7 @@ body {
 
   .page-wrapper {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 25% 75%;
     grid-template-rows: 10% 80% 10%;
     grid-template-areas:
             "page-header  page-header"
@@ -81,7 +81,8 @@ body {
   .page-sidebar {
     grid-area: page-sidebar;
     align-self: flex-start;
-    padding: 5em;
+    padding-top: 5em;
+    max-width: 40em;
   }
 
   .page-content {
@@ -90,6 +91,8 @@ body {
     justify-self: flex-start;
     padding: 3em;
     z-index: 1000;
+    min-width: 40em;
+    max-width: 65em;
   }
 
   .page-footer {

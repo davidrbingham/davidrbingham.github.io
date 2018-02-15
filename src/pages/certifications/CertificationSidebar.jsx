@@ -6,8 +6,8 @@ export default class CertificationSidebar extends React.Component {
 	render() {
 		return (
 			<div className="page-sidebar">
-				<div>
-					<object type="image/svg+xml" data={CertificationImage}/>
+				<div className="image-align-right">
+					<object className="image-scaling-medium" type="image/svg+xml" data={CertificationImage}/>
 				</div>
 			</div>
 		);

@@ -6,7 +6,7 @@ export default class EducationSidebar extends React.Component {
 	render() {
 		return (
 			<div className="page-sidebar">
-				<div>
+				<div className="image-align-right">
 					<object type="image/svg+xml" data={ExperienceImage}/>
 				</div>
 			</div>

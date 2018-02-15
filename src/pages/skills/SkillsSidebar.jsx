@@ -6,8 +6,8 @@ export default class SkillsSidebar extends React.Component {
 	render() {
 		return (
 			<div className="page-sidebar">
-				<div>
-					<object type="image/svg+xml" data={SkillsImage}/>
+				<div className="image-align-right">
+					<object className="image-scaling-larger" type="image/svg+xml" data={SkillsImage}/>
 				</div>
 			</div>
 		);

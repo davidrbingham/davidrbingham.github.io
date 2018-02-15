@@ -1,17 +1,37 @@
 [
   {
     "description": "Java",
-    "percentage": 70,
+    "percentage": 80,
     "imageURL": "http://www.davidbingham.me/images/logos/logo-java.svg"
   },
   {
     "description": "Javascript",
-    "percentage": 80,
+    "percentage": 90,
     "imageURL": "http://www.davidbingham.me/images/logos/logo-javascript.svg"
   },
   {
     "description": "Python",
-    "percentage": 20,
+    "percentage": 30,
     "imageURL": "http://www.davidbingham.me/images/logos/logo-python.svg"
+  },
+  {
+    "description": "Kubernetes",
+    "percentage": 40,
+    "imageURL": "http://www.davidbingham.me/images/logos/logo-kubernetes.svg"
+  },
+  {
+    "description": "linux",
+    "percentage": 50,
+    "imageURL": "http://www.davidbingham.me/images/logos/logo-linux.svg"
+  },
+  {
+    "description": "NodeJS",
+    "percentage": 70,
+    "imageURL": "http://www.davidbingham.me/images/logos/logo-node.svg"
+  },
+  {
+    "description": "Webpack",
+    "percentage": 70,
+    "imageURL": "http://www.davidbingham.me/images/logos/logo-webpack.svg"
   }
 ]

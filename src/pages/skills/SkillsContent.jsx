@@ -1,5 +1,6 @@
 import React from 'react';
 import ProgressBar from '../../components/progress/ProgressBar';
+import SimpleContentContainer from '../../components/content/SimpleContentContainer';
 
 import skills from '../../../json/skills.json';
 import frameworks from '../../../json/frameworks.json';
@@ -7,28 +8,31 @@ import tools from '../../../json/tools.json';
 
 export default class SkillsContent extends React.Component {
 
-	getSkillsOverview(){
+	getSkillsOverview() {
 		return skills.map((entry, index) => {
-			return <ProgressBar key={index} description={entry.description} percentage={entry.percentage} imageURL={entry.imageURL}/>;
+			return <ProgressBar key={index} description={entry.description} percentage={entry.percentage}
+													imageURL={entry.imageURL}/>;
 		});
 	}
 
-	getFrameworksOverview(){
+	getFrameworksOverview() {
 		return frameworks.map((entry, index) => {
-			return <ProgressBar key={index} description={entry.description} percentage={entry.percentage} imageURL={entry.imageURL}/>;
+			return <ProgressBar key={index} description={entry.description} percentage={entry.percentage}
+													imageURL={entry.imageURL}/>;
 		});
 	}
 
-	getToolsOverview(){
+	getToolsOverview() {
 		return tools.map((entry, index) => {
-			return <ProgressBar key={index} description={entry.description} percentage={entry.percentage} imageURL={entry.imageURL}/>;
+			return <ProgressBar key={index} description={entry.description} percentage={entry.percentage}
+													imageURL={entry.imageURL}/>;
 		});
 	}
 
 	render() {
 		return (
 			<div className="page-content">
-				<div className="page-container">
+				<SimpleContentContainer title="Professional Skills Overview">
 					<div>
 						<p>
 							The following are an overview of my skills and how I rate myself in using that skill.
@@ -37,12 +41,12 @@ export default class SkillsContent extends React.Component {
 						</p>
 						<p><b>Skills</b></p>
 					</div>
-					{ this.getSkillsOverview() }
+					{this.getSkillsOverview()}
 					<p><b>Frameworks</b></p>
-					{ this.getFrameworksOverview() }
-						<p><b>Tools</b></p>
-					{ this.getToolsOverview() }
-				</div>
+					{this.getFrameworksOverview()}
+					<p><b>Tools</b></p>
+					{this.getToolsOverview()}
+				</SimpleContentContainer>
 			</div>
 		);
 	}
