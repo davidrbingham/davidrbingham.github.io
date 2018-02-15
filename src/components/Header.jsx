@@ -1,13 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-
 import Resume from '../../resume/resume.html';
-
-import GitHubLogo from '../../images/logos/logo-github.svg';
-import LinkedinLogo from '../../images/logos/logo-linkedin.svg';
-import TwitterLogo from '../../images/logos/logo-twitter.svg';
-import ResumeIcon from '../../images/logos/logo-resume.svg';
-import EmailIcon from '../../images/icons/icon-email.svg';
 
 export default class Header extends React.Component {
 
@@ -80,35 +73,35 @@ export default class Header extends React.Component {
 						<div className="header-item">
 							<span className="hor-rhythm-1">
 							<button className="phony-button" onClick={ () => { window.open("http://github.com/telbot", '_blank'); } } title="GitHub">
-								<img width="25px" height="25px" src={GitHubLogo}/>
+								<img width="25px" height="25px" src='http://www.davidbingham.me/images/logos/logo-github.svg'/>
 							</button>
 							</span>
 						</div>
 						<div className="header-item">
 						<span className="hor-rhythm-1">
 							<button className="phony-button" onClick={ () => { window.open("http://www.linkedin.com/in/david-bingham-a168a610a", '_blank'); } } title="LinkedIn">
-								<img width="25px" height="25px" src={LinkedinLogo}/>
+								<img width="25px" height="25px" src='http://www.davidbingham.me/images/logos/logo-linkedin.svg'/>
 							</button>
 						</span>
 						</div>
 						<div className="header-item">
 						<span className="hor-rhythm-1">
 							<button className="phony-button" onClick={ () => { window.open("https://twitter.com/davidrbingham", '_blank'); } } title="Twitter">
-								<img width="25px" height="25px" src={TwitterLogo}/>
+								<img width="25px" height="25px" src='http://www.davidbingham.me/images/logos/logo-twitter.svg'/>
 							</button>
 						</span>
 						</div>
 						<div className="header-item">
 						<span className="hor-rhythm-1">
 							<button className="phony-button" onClick={ () => { location.href='mailto:davidrbingham@hotmail.co.uk' } } title="Email">
-								<img width="25px" height="25px" src={EmailIcon}/>
+								<img width="25px" height="25px" src='http://www.davidbingham.me/images/icons/icon-email.svg'/>
 							</button>
 						</span>
 						</div>
 						{/*						<div className="header-item">
 						<span className="hor-rhythm-1">
 							<button className="phony-button" onClick={ this.downloadResume } title="Download Resume">
-								<img width="25px" height="25px" src={ResumeIcon}/>
+								<img width="25px" height="25px" src='http://www.davidbingham.me/images/logos/logo-resume.svg'/>
 							</button>
 						</span>
 						</div>*/}

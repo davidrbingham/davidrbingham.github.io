@@ -1,5 +1,4 @@
 import React from 'react';
-import PersonalLogoText from '../../images/logos/logo-personal-text.svg';
 
 export default class Header extends React.Component {
 
@@ -9,7 +8,7 @@ export default class Header extends React.Component {
 				<div className="footer-container">
 					<div className="footer-item-center">
 						<span>
-							<object className="personal-logo-container" type="image/svg+xml" data={PersonalLogoText}/>
+							<img className="personal-logo-container" src='http://www.davidbingham.me/images/logos/logo-personal-text.svg'/>
 						</span>
 					</div>
 				</div>

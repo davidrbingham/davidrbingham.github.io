@@ -1,5 +1,4 @@
 import React from 'react';
-import DevelopmentImage from '../../../images/titles/title-development.svg';
 
 export default class DevelopmentSidebar extends React.Component {
 
@@ -7,7 +6,7 @@ export default class DevelopmentSidebar extends React.Component {
 		return (
 			<div className="page-sidebar">
 				<div className="image-align-right">
-					<object type="image/svg+xml" data={DevelopmentImage}/>
+					<img src='http://www.davidbingham.me/images/titles/title-development.svg'/>
 				</div>
 			</div>
 		);
