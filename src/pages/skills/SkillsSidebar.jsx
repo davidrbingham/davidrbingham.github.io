@@ -1,5 +1,5 @@
 import React from 'react';
-import SkillsImage from '../../../images/titles/title-certifications.svg';
+import SkillsImage from '../../../images/titles/title-skills.svg';
 
 export default class SkillsSidebar extends React.Component {
 
