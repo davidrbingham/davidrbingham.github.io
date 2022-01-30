@@ -1,0 +1,4 @@
+baseURL = 'https://davidrbingham.github.io'
+languageCode = 'en-us'
+title = 'davidbingham.me'
+theme = "photophobia"
