@@ -1,4 +1,4 @@
 baseURL = 'https://davidrbingham.github.io'
 languageCode = 'en-us'
-title = 'davidbingham.me hello'
-theme = "photophobia"
+title = 'davidbingham.me'
+theme = "hugo-theme"
